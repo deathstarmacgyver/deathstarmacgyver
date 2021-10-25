@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<!-- TWO DIVS https://www.tutorialspoint.com/How-to-place-two-divs-next-to-each-other-in-HTML -->
+<!-- FLOAT LAYOUT DIV https://www.w3schools.com/html/html_layout.asp -->
+<!-- BUTTON LINK https://www.w3schools.com/tags/tag_button.asp -->
+<head>
+
+<title>Deathstar MacGyver</title>
+<meta name="description" content="Music & Visuals">
+ <meta name="keywords" content="deathstarmacgyver, deathstar, macgyver, music, artist, visual, graphic">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+@media screen and (orientation: portrait) {
+
+}
+
+@media screen and (orientation: landscape) {
+#nav{border:solid 2px green; width:25%; float:left;margin:10px;padding:10px;}
+#content{border:solid 2px blue;float:left;margin:10px;padding:10px;}
+#navlist{list-style-type:none;}
+#links{text-align:center;margin-top:-20px;}
+.page{border:solid 2px;}
+}
+
+#wrapper{border:solid 2px red; width:100%;float:left;}
+h1{text-align:center;}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+<div id="nav">
+<h1>Deathstar MacGyver</h1>
+<div id="links">
+<input type=button class="stickybutton button1" onClick="location.href='mailto:deathstarmacgyver@gmail.com'"
+ value='e-mail'>
+<input type=button class="stickybutton button1" onClick="location.href='https://www.instagram.com/deathstarmacgyver/'"
+ value='insta'>
+</div links>
+<div id="navbar">
+<ul id="navlist">
+<li>MUSIC</li>
+<li>VISUAL</li>
+<li>PROMOTIONAL WORK</li>
+</ul>
+</div navlist>
+</div navbar>
+<div id="content">
+<div id="music" class="page">
+mus
+</div music>
+<div id="visual" class="page">
+
+
+</div visual>
+<div id="promo" class="page">
+prom
+</div promo>
+</div content>
+
+</div wrapper>
+
+</body>
+
+</html>
