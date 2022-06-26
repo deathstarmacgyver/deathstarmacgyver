@@ -42,14 +42,13 @@ max-height:80%;
 .main {
   float: right;
   width: 80%;
-  padding: 0 20px;
-
+  padding: 0px 20px 0px 20px;
 }
 
-.post{padding:0px 0px 100px 0px ;}
+.post{padding:0px 0px 0px 0px ;}
 
-.half-img {width:49%;padding:10px;}
-h1{letter-spacing:20px;text-align:center;}
+.half-img {width:49%;padding: 10px 10px 10px 10px;}
+h1{letter-spacing:10px;text-align:center;font-weight:normal;}
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
@@ -71,6 +70,13 @@ text-align:center;
 body{margin-top:0%;}
 
 .half-img {width:100%;padding:25px 0px 25px 0px}
+
+:target:before {
+content:"";
+display:block;
+height:50px; /* fixed header height*/
+margin:-50px 0 0; /* negative fixed header height */
+} 
 
 }
 
@@ -139,4 +145,3 @@ window.onclick = function(event) {
 
 </body>
 </html>
-
