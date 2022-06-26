@@ -13,35 +13,38 @@ body{margin-top:5%;}
   float: left;
   width: 20%;
   text-align: center;
-border-style: solid;
-border-color:red;
+overflow:scroll;
+max-height:80%;
 }
 
-.dropdown a {background-color:red;
+.disable-scrollbars::-webkit-scrollbar {
+  background: transparent; /* Chrome/Safari/Webkit */
+  width: 0px;
+}
+    
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.dropdown a {background-color:white;
   padding: 12px;
   display: block;
   width: 100%;
   color: black;
   position: relative;
-border-style: solid;
-border-color:blue;
+
+
 }
-
-.dropbtn {
-  border: solid yellow;
-}
-
-
 
 .main {
   float: right;
   width: 80%;
   padding: 0 20px;
-border-style: solid;
-border-color:green;
+
 }
 
-
+.half-img {width:49%;padding:10px;}
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
@@ -50,23 +53,26 @@ border-color:green;
   }
 .dropdown a {width:98%}
 .main{margin-top:10%;}
-
+.dropdown {max-height:50%;}
 .dropdown-content {
   display: none;
 width:auto;  
 overflow: auto;
-  border: solid blue;
+
 }
 
 .dropdown-content a {
   display: block;
-    border: solid pink;
+
 
 }
 
 .show {display: block;}
 
 body{margin-top:0%;}
+
+.half-img {width:100%;padding:10px;}
+
 }
 
 </style>
@@ -74,40 +80,42 @@ body{margin-top:0%;}
 <body style="font-family:courier;">
 
 
-<div style="overflow:auto">
-  <div class="dropdown">
+<div style="overflow:auto;">
+  <div class="dropdown disable-scrollbars">
     <a onclick="myFunction()" class="dropbtn">VISUAL WORK</a>
 <li id="myDropdown" class="dropdown-content">
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
-    <a href="#">Link 4</a></li>
+    <a href="#">Link 4</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link qsdfqsdfqsdf</a>
+</li>
 
   </div>
 
   <div class="main">
-    <h2>Lorum Ipsum</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin metus vitae lobortis sollicitudin. Nullam ullamcorper eget sapien non mollis. Nam aliquam metus sapien, a pretium nibh condimentum quis. Quisque ac diam at felis consectetur sagittis sed vel metus. Sed condimentum convallis metus nec sodales. Morbi at tellus non sapien euismod pretium. Quisque quam eros, volutpat gravida mi a, volutpat fermentum risus. Nam vestibulum ex magna, in eleifend ligula rhoncus eu. Pellentesque non sodales nunc.
-
-Morbi non convallis neque. Fusce semper dui quis quam vulputate convallis nec ac orci. Aenean a gravida risus. Maecenas molestie lobortis nisi. Vivamus tempus leo a commodo viverra. Vivamus posuere interdum orci, at vehicula dui efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In suscipit elit et dui maximus malesuada. Maecenas bibendum diam commodo dui faucibus consectetur.
-
-Praesent magna sem, mattis id consectetur eu, tempus vel arcu. Suspendisse rhoncus lorem id lectus convallis efficitur at fermentum felis. Proin fermentum justo at leo vulputate, id suscipit velit ullamcorper. Cras condimentum id sapien vitae mattis. Curabitur non sollicitudin magna. Proin ex velit, euismod a tellus quis, dictum faucibus elit. Phasellus tempus dolor quis euismod sollicitudin. Vestibulum malesuada dolor ex, vitae sollicitudin odio rhoncus ut. Praesent efficitur, mauris a laoreet bibendum, velit magna varius dolor, non rutrum est sem vel tellus. Sed at quam volutpat, suscipit velit et, ornare arcu. Mauris aliquet sollicitudin mauris et convallis. Morbi placerat congue arcu, vitae mollis orci malesuada nec.
-
-Duis porta ornare vehicula. Mauris et nisi vitae magna fringilla tristique vel vel elit. Nam elit arcu, fringilla eu imperdiet eget, scelerisque sit amet urna. Mauris sagittis mi nunc, a scelerisque mi eleifend ut. Proin a nisl ac lacus dignissim vulputate at et tortor. Praesent ut libero sollicitudin, maximus metus in, pulvinar nulla. Fusce aliquam cursus fringilla. Nam sapien libero, efficitur id rutrum sit amet, imperdiet eu ex. Vivamus euismod libero vitae justo tempus tincidunt. Quisque sit amet sapien commodo, gravida nunc quis, aliquam quam. Praesent consectetur volutpat lectus, at laoreet nisi dignissim a.
-
-Morbi mi justo, gravida sit amet ligula quis, venenatis ullamcorper lectus. Nullam posuere velit diam, ut ornare libero tincidunt a. In urna purus, tincidunt nec eros sed, rutrum fermentum nulla. Vestibulum auctor neque in molestie sodales. Proin interdum consectetur neque, at consectetur eros aliquet in. Aliquam nec urna quis arcu dignissim semper in nec odio. Sed pharetra elit ac elit hendrerit dictum. Nulla gravida et lacus aliquet porta. Sed hendrerit orci vitae orci hendrerit, in aliquam neque luctus. Maecenas tempor est at pharetra lobortis. 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin metus vitae lobortis sollicitudin. Nullam ullamcorper eget sapien non mollis. Nam aliquam metus sapien, a pretium nibh condimentum quis. Quisque ac diam at felis consectetur sagittis sed vel metus. Sed condimentum convallis metus nec sodales. Morbi at tellus non sapien euismod pretium. Quisque quam eros, volutpat gravida mi a, volutpat fermentum risus. Nam vestibulum ex magna, in eleifend ligula rhoncus eu. Pellentesque non sodales nunc.
-
-Morbi non convallis neque. Fusce semper dui quis quam vulputate convallis nec ac orci. Aenean a gravida risus. Maecenas molestie lobortis nisi. Vivamus tempus leo a commodo viverra. Vivamus posuere interdum orci, at vehicula dui efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In suscipit elit et dui maximus malesuada. Maecenas bibendum diam commodo dui faucibus consectetur.
-
-Praesent magna sem, mattis id consectetur eu, tempus vel arcu. Suspendisse rhoncus lorem id lectus convallis efficitur at fermentum felis. Proin fermentum justo at leo vulputate, id suscipit velit ullamcorper. Cras condimentum id sapien vitae mattis. Curabitur non sollicitudin magna. Proin ex velit, euismod a tellus quis, dictum faucibus elit. Phasellus tempus dolor quis euismod sollicitudin. Vestibulum malesuada dolor ex, vitae sollicitudin odio rhoncus ut. Praesent efficitur, mauris a laoreet bibendum, velit magna varius dolor, non rutrum est sem vel tellus. Sed at quam volutpat, suscipit velit et, ornare arcu. Mauris aliquet sollicitudin mauris et convallis. Morbi placerat congue arcu, vitae mollis orci malesuada nec.
-
-Duis porta ornare vehicula. Mauris et nisi vitae magna fringilla tristique vel vel elit. Nam elit arcu, fringilla eu imperdiet eget, scelerisque sit amet urna. Mauris sagittis mi nunc, a scelerisque mi eleifend ut. Proin a nisl ac lacus dignissim vulputate at et tortor. Praesent ut libero sollicitudin, maximus metus in, pulvinar nulla. Fusce aliquam cursus fringilla. Nam sapien libero, efficitur id rutrum sit amet, imperdiet eu ex. Vivamus euismod libero vitae justo tempus tincidunt. Quisque sit amet sapien commodo, gravida nunc quis, aliquam quam. Praesent consectetur volutpat lectus, at laoreet nisi dignissim a.
-
-Morbi mi justo, gravida sit amet ligula quis, venenatis ullamcorper lectus. Nullam posuere velit diam, ut ornare libero tincidunt a. In urna purus, tincidunt nec eros sed, rutrum fermentum nulla. Vestibulum auctor neque in molestie sodales. Proin interdum consectetur neque, at consectetur eros aliquet in. Aliquam nec urna quis arcu dignissim semper in nec odio. Sed pharetra elit ac elit hendrerit dictum. Nulla gravida et lacus aliquet porta. Sed hendrerit orci vitae orci hendrerit, in aliquam neque luctus. Maecenas tempor est at pharetra lobortis. </p>
-  </div>
+<img class="half-img" src="https://dl.dropbox.com/s/efol6za9hpdo4wf/kop.png?dl=1">
+<img class="half-img" src="https://dl.dropbox.com/s/3gboqkz9kbncad8/ring.png?dl=1">
+<img class="half-img" src="https://dl.dropbox.com/s/edfzybw2s9r2jsb/zwem.png?dl=1">
+  
+</div>
 
 <div style="width:100%;float:right;text-align:center;padding:10px;margin-top:7px;">© Deathstar MacGyver</div>
 
