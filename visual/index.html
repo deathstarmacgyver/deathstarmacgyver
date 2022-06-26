@@ -35,7 +35,7 @@ max-height:80%;
   position: relative;float:right;}
 
 .dropdown-content{text-align:left;}
-
+.dropdown-content a{text-decoration: none; }
 
 
 
@@ -46,7 +46,10 @@ max-height:80%;
 
 }
 
+.post{padding:0px 0px 100px 0px ;}
+
 .half-img {width:49%;padding:10px;}
+h1{letter-spacing:20px;text-align:center;}
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
@@ -60,7 +63,7 @@ max-height:80%;
   display: none;
 width:auto;  
 overflow: auto;
-
+text-align:center;
 }
 
 .show {display: block;}
@@ -78,20 +81,33 @@ body{margin-top:0%;}
 
 <div style="overflow:auto;">
   <div class="dropdown disable-scrollbars">
-    <a onclick="myFunction()" class="dropbtn">VISUAL WORK</a>
+    <a href="#" onclick="myFunction()" class="dropbtn">VISUAL WORK</a>
 <li id="myDropdown" class="dropdown-content">
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 4</a>
+    <a href="#insta-posters">insta-Posters</a>
+    <a href="#animation">animation</a>
+    <a href="#finger">finger</a>
 </li>
 
   </div>
 
   <div class="main">
-
+<div id="insta-posters" class="post">
+<h1>INSTA-POSTERS</h1>
 <img class="half-img" src="https://dl.dropbox.com/s/efol6za9hpdo4wf/kop.png?dl=1">
 <img class="half-img" src="https://dl.dropbox.com/s/3gboqkz9kbncad8/ring.png?dl=1">
 <img class="half-img" src="https://dl.dropbox.com/s/edfzybw2s9r2jsb/zwem.png?dl=1">
+</div>
+
+<div id="animation" class="post">
+<h1>ANIMATION</h1>
+<img class="half-img" src="https://dl.dropbox.com/s/nvpibigha5cx6ho/baardmans.gif?dl=1">
+</div>
+
+<div id="finger" class="post">
+<h1>FINGR</h1>
+<img class="half-img" src="https://dl.dropbox.com/s/i3sz3w0zfrn3sb4/297mm_vierkant_3.jpg?dl=1">
+<img class="half-img" src="https://dl.dropbox.com/s/doru92zreadtm17/deathstar%20profielfoto.png?dl=1">
+</div>
   
 </div>
 
