@@ -36,3 +36,6 @@ https://www.copahost.com/blog/how-to-redirect-a-url-to-another-url/
 
 CLICKABLE DROPDOWN MENU
 https://www.w3schools.com/howto/howto_js_dropdown.asp
+
+FIXED MENU
+https://www.w3schools.com/howto/howto_css_fixed_menu.asp
