@@ -39,3 +39,9 @@ https://www.w3schools.com/howto/howto_js_dropdown.asp
 
 FIXED MENU
 https://www.w3schools.com/howto/howto_css_fixed_menu.asp
+
+SCROLLABLE DROPDOWN MENU
+https://stackoverflow.com/questions/21983819/making-a-drop-down-menu-scrollable
+
+HIDE SCROLLBAR
+https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-element-scrollable
