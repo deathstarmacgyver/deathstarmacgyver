@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.dropdown {position:fixed;background-color:red;
+  float: left;
+  width: 20%;
+  text-align: center;
+border-style: solid;
+border-color:red;
+}
+
+.dropdown a {
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+  position: relative;
+border-style: solid;
+border-color:blue;
+}
+
+.dropbtn {
+  border: solid yellow;
+}
+
+
+.dropdown-content {
+  display: none;
+width:auto;  
+overflow: auto;
+  border: solid blue;
+}
+
+.dropdown-content a {
+  display: block;
+    border: solid pink;
+
+}
+
+.show {display: block;}
+
+.main {
+  float: right;
+  width: 80%;
+  padding: 0 20px;
+border-style: solid;
+border-color:green;
+}
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .dropdown, .main{
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body style="font-family:courier;">
+
+<div style="border-style:solid;border-color:pink;padding:15px;text-align:center;">
+  <h1 style="letter-spacing: 50px;">VISUAL</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="dropdown">
+    <a onclick="myFunction()" class="dropbtn">VISUAL WORK</a>
+<div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a></div>
+
+  </div>
+
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin metus vitae lobortis sollicitudin. Nullam ullamcorper eget sapien non mollis. Nam aliquam metus sapien, a pretium nibh condimentum quis. Quisque ac diam at felis consectetur sagittis sed vel metus. Sed condimentum convallis metus nec sodales. Morbi at tellus non sapien euismod pretium. Quisque quam eros, volutpat gravida mi a, volutpat fermentum risus. Nam vestibulum ex magna, in eleifend ligula rhoncus eu. Pellentesque non sodales nunc.
+
+Morbi non convallis neque. Fusce semper dui quis quam vulputate convallis nec ac orci. Aenean a gravida risus. Maecenas molestie lobortis nisi. Vivamus tempus leo a commodo viverra. Vivamus posuere interdum orci, at vehicula dui efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In suscipit elit et dui maximus malesuada. Maecenas bibendum diam commodo dui faucibus consectetur.
+
+Praesent magna sem, mattis id consectetur eu, tempus vel arcu. Suspendisse rhoncus lorem id lectus convallis efficitur at fermentum felis. Proin fermentum justo at leo vulputate, id suscipit velit ullamcorper. Cras condimentum id sapien vitae mattis. Curabitur non sollicitudin magna. Proin ex velit, euismod a tellus quis, dictum faucibus elit. Phasellus tempus dolor quis euismod sollicitudin. Vestibulum malesuada dolor ex, vitae sollicitudin odio rhoncus ut. Praesent efficitur, mauris a laoreet bibendum, velit magna varius dolor, non rutrum est sem vel tellus. Sed at quam volutpat, suscipit velit et, ornare arcu. Mauris aliquet sollicitudin mauris et convallis. Morbi placerat congue arcu, vitae mollis orci malesuada nec.
+
+Duis porta ornare vehicula. Mauris et nisi vitae magna fringilla tristique vel vel elit. Nam elit arcu, fringilla eu imperdiet eget, scelerisque sit amet urna. Mauris sagittis mi nunc, a scelerisque mi eleifend ut. Proin a nisl ac lacus dignissim vulputate at et tortor. Praesent ut libero sollicitudin, maximus metus in, pulvinar nulla. Fusce aliquam cursus fringilla. Nam sapien libero, efficitur id rutrum sit amet, imperdiet eu ex. Vivamus euismod libero vitae justo tempus tincidunt. Quisque sit amet sapien commodo, gravida nunc quis, aliquam quam. Praesent consectetur volutpat lectus, at laoreet nisi dignissim a.
+
+Morbi mi justo, gravida sit amet ligula quis, venenatis ullamcorper lectus. Nullam posuere velit diam, ut ornare libero tincidunt a. In urna purus, tincidunt nec eros sed, rutrum fermentum nulla. Vestibulum auctor neque in molestie sodales. Proin interdum consectetur neque, at consectetur eros aliquet in. Aliquam nec urna quis arcu dignissim semper in nec odio. Sed pharetra elit ac elit hendrerit dictum. Nulla gravida et lacus aliquet porta. Sed hendrerit orci vitae orci hendrerit, in aliquam neque luctus. Maecenas tempor est at pharetra lobortis. 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin metus vitae lobortis sollicitudin. Nullam ullamcorper eget sapien non mollis. Nam aliquam metus sapien, a pretium nibh condimentum quis. Quisque ac diam at felis consectetur sagittis sed vel metus. Sed condimentum convallis metus nec sodales. Morbi at tellus non sapien euismod pretium. Quisque quam eros, volutpat gravida mi a, volutpat fermentum risus. Nam vestibulum ex magna, in eleifend ligula rhoncus eu. Pellentesque non sodales nunc.
+
+Morbi non convallis neque. Fusce semper dui quis quam vulputate convallis nec ac orci. Aenean a gravida risus. Maecenas molestie lobortis nisi. Vivamus tempus leo a commodo viverra. Vivamus posuere interdum orci, at vehicula dui efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In suscipit elit et dui maximus malesuada. Maecenas bibendum diam commodo dui faucibus consectetur.
+
+Praesent magna sem, mattis id consectetur eu, tempus vel arcu. Suspendisse rhoncus lorem id lectus convallis efficitur at fermentum felis. Proin fermentum justo at leo vulputate, id suscipit velit ullamcorper. Cras condimentum id sapien vitae mattis. Curabitur non sollicitudin magna. Proin ex velit, euismod a tellus quis, dictum faucibus elit. Phasellus tempus dolor quis euismod sollicitudin. Vestibulum malesuada dolor ex, vitae sollicitudin odio rhoncus ut. Praesent efficitur, mauris a laoreet bibendum, velit magna varius dolor, non rutrum est sem vel tellus. Sed at quam volutpat, suscipit velit et, ornare arcu. Mauris aliquet sollicitudin mauris et convallis. Morbi placerat congue arcu, vitae mollis orci malesuada nec.
+
+Duis porta ornare vehicula. Mauris et nisi vitae magna fringilla tristique vel vel elit. Nam elit arcu, fringilla eu imperdiet eget, scelerisque sit amet urna. Mauris sagittis mi nunc, a scelerisque mi eleifend ut. Proin a nisl ac lacus dignissim vulputate at et tortor. Praesent ut libero sollicitudin, maximus metus in, pulvinar nulla. Fusce aliquam cursus fringilla. Nam sapien libero, efficitur id rutrum sit amet, imperdiet eu ex. Vivamus euismod libero vitae justo tempus tincidunt. Quisque sit amet sapien commodo, gravida nunc quis, aliquam quam. Praesent consectetur volutpat lectus, at laoreet nisi dignissim a.
+
+Morbi mi justo, gravida sit amet ligula quis, venenatis ullamcorper lectus. Nullam posuere velit diam, ut ornare libero tincidunt a. In urna purus, tincidunt nec eros sed, rutrum fermentum nulla. Vestibulum auctor neque in molestie sodales. Proin interdum consectetur neque, at consectetur eros aliquet in. Aliquam nec urna quis arcu dignissim semper in nec odio. Sed pharetra elit ac elit hendrerit dictum. Nulla gravida et lacus aliquet porta. Sed hendrerit orci vitae orci hendrerit, in aliquam neque luctus. Maecenas tempor est at pharetra lobortis. </p>
+  </div>
+
+<div style="width:100%;float:right;text-align:center;padding:10px;margin-top:7px;">© Deathstar MacGyver</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+</body>
+</html>
 
