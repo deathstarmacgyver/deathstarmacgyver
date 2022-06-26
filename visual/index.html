@@ -7,7 +7,9 @@
   box-sizing: border-box;
 }
 
-.dropdown {position:fixed;background-color:red;
+body{margin-top:5%;}
+
+.dropdown {position:fixed;
   float: left;
   width: 20%;
   text-align: center;
@@ -15,9 +17,8 @@ border-style: solid;
 border-color:red;
 }
 
-.dropdown a {
-  padding: 8px;
-  margin-top: 7px;
+.dropdown a {background-color:red;
+  padding: 12px;
   display: block;
   width: 100%;
   color: black;
@@ -30,6 +31,25 @@ border-color:blue;
   border: solid yellow;
 }
 
+
+
+.main {
+  float: right;
+  width: 80%;
+  padding: 0 20px;
+border-style: solid;
+border-color:green;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .dropdown, .main{
+    width: 100%;
+  }
+.dropdown a {width:98%}
+.main{margin-top:10%;}
 
 .dropdown-content {
   display: none;
@@ -46,37 +66,21 @@ overflow: auto;
 
 .show {display: block;}
 
-.main {
-  float: right;
-  width: 80%;
-  padding: 0 20px;
-border-style: solid;
-border-color:green;
-}
-
-
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .dropdown, .main{
-    width: 100%;
-  }
+body{margin-top:0%;}
 }
 
 </style>
 </head>
 <body style="font-family:courier;">
 
-<div style="border-style:solid;border-color:pink;padding:15px;text-align:center;">
-  <h1 style="letter-spacing: 50px;">VISUAL</h1>
-</div>
 
 <div style="overflow:auto">
   <div class="dropdown">
     <a onclick="myFunction()" class="dropbtn">VISUAL WORK</a>
-<div id="myDropdown" class="dropdown-content">
+<li id="myDropdown" class="dropdown-content">
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
-    <a href="#">Link 4</a></div>
+    <a href="#">Link 4</a></li>
 
   </div>
 
