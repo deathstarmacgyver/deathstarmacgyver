@@ -33,3 +33,6 @@ https://www.sitepoint.com/css3-responsive-centered-image/
 
 REDIRECT URL
 https://www.copahost.com/blog/how-to-redirect-a-url-to-another-url/
+
+CLICKABLE DROPDOWN MENU
+https://www.w3schools.com/howto/howto_js_dropdown.asp
