@@ -48,3 +48,9 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
 
 ANCHOR LINKS SCROLL TO FAR
 https://forum.squarespace.com/topic/171669-anchor-links-scroll-too-far/
+
+RESPONSIVE GALLERY
+https://www.w3schools.com/Css/css_image_gallery.asp
+
+IMG HOVER B&W
+https://www.codeblocq.com/2016/08/Turn-an-image-to-Black-and-White-on-hover-with-CSS/
