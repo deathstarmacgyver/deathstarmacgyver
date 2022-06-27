@@ -54,3 +54,6 @@ https://www.w3schools.com/Css/css_image_gallery.asp
 
 IMG HOVER B&W
 https://www.codeblocq.com/2016/08/Turn-an-image-to-Black-and-White-on-hover-with-CSS/
+
+MODAL LIGHTBOX IMG GALLERY
+https://www.w3schools.com/howto/howto_js_lightbox.asp
