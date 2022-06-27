@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>visual work</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   
@@ -267,6 +268,11 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.viddy {
+  height:600px;
+  width:100%;
+}
+
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
   .dropdown, .main{
@@ -308,8 +314,11 @@ img.hover-shadow {
   body{
     margin-top:0%;
   }
-
-
+  .viddy {
+    padding:10px;
+    height:400px;
+    width:100%;
+  }
   :target:before {
     content:"";
     display:block;
@@ -367,7 +376,7 @@ img.hover-shadow {
     <div class="responsive">
       <div class="gallery">
         <a onclick="openModal();currentSlide(4)">
-          <img class="thumbnail" src="https://dl.dropbox.com/s/qfixesj4s3h1st3/kooka_C.png?dl=1" width="600" height="400">
+          <img class="thumbnail" src="https://dl.dropbox.com/s/p3x5wp6axxcpfyn/kooka.png?dl=1" width="600" height="400">
           </a>
         </div>
       </div>
@@ -399,7 +408,7 @@ img.hover-shadow {
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img class="modalslide2" src="https://dl.dropbox.com/s/mrqd9y978kabg0t/kooka.png?dl=1">
+          <img class="modalslide1" src="https://dl.dropbox.com/s/p3x5wp6axxcpfyn/kooka.png?dl=1">
           <div class="caption-container"><p id="caption">tour poster</p></div>
           </div>
 
@@ -411,6 +420,11 @@ img.hover-shadow {
 
     </div insta-posters>
 
+  <div id="animation" class="post">
+    <h1>ANIMATION</h1>
+      <iframe class="viddy" src="https://www.youtube.com/embed/flYmOpwi-C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="viddy" src="https://www.youtube.com/embed/wwdBQ6FlHiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div animation>
   </div main>
 
 <div style="width:100%;float:right;text-align:center;padding:10px;margin-top:7px;">
