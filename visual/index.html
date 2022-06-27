@@ -118,6 +118,11 @@ div.desc {
   margin:0% 24% 0% 24%;
 }
 
+.modalslide2 {
+  width:100%;
+  margin:0% 0% 0% 0% ;
+}
+
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
@@ -126,6 +131,10 @@ div.desc {
   .modalslide1 {
     width:100%;
     margin:0% 0% 0% 0% ;
+  }
+  .modalslide2 {
+  width:100%;
+  margin:0% 0% 0% 0% ;
   }
 }
 
@@ -361,8 +370,8 @@ margin:-50px 0 0; /* negative fixed header height */
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_mountains.jpg">
-      <img src="https://dl.dropbox.com/s/3gboqkz9kbncad8/ring.png?dl=1" alt="Mountains" width="600" height="400">
+    <a onclick="openModal();currentSlide(4)">
+      <img class="thumbnail" src="https://dl.dropbox.com/s/qfixesj4s3h1st3/kooka_C.png?dl=1" width="600" height="400">
     </a>
     <div class="desc">Add a description of the image here</div>
   </div>
@@ -400,9 +409,9 @@ margin:-50px 0 0; /* negative fixed header height */
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img class="modalslide1" src="img_lights_wide.jpg">
+      <img class="modalslide2" src="https://dl.dropbox.com/s/mrqd9y978kabg0t/kooka.png?dl=1">
 <div class="caption-container">
-      <p id="caption">J.Zunz</p>
+      <p id="caption">tour poster</p>
     </div>
     </div>
     
