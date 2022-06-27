@@ -310,13 +310,12 @@ img.hover-shadow {
   }
 
 
-:target:before {
-content:"";
-display:block;
-height:50px; /* fixed header height*/
-margin:-50px 0 0; /* negative fixed header height */
-} 
-
+  :target:before {
+    content:"";
+    display:block;
+    height:50px; /* fixed header height*/
+    margin:-50px 0 0; /* negative fixed header height */
+  } 
 }
 
 </style>
@@ -336,99 +335,89 @@ margin:-50px 0 0; /* negative fixed header height */
 
   </div>
 
-  <div class="main">
-<div id="insta-posters" class="post">
-<h1>INSTA-POSTERS</h1>
+<div class="main">
+  <div id="insta-posters" class="post">
+    <h1>INSTA-POSTERS</h1>
 
-<div class="responsive">
-  <div class="gallery">
-    <a onclick="openModal();currentSlide(1)">
-      <img class="thumbnail" src="https://dl.dropbox.com/s/efol6za9hpdo4wf/kop.png?dl=1" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="responsive">
+      <div class="gallery">
+        <a onclick="openModal();currentSlide(1)">
+          <img class="thumbnail" src="https://dl.dropbox.com/s/efol6za9hpdo4wf/kop.png?dl=1" width="600" height="400">
+          </a>
+        </div>
+      </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a onclick="openModal();currentSlide(2)">
+          <img class="thumbnail" src="https://dl.dropbox.com/s/3gboqkz9kbncad8/ring.png?dl=1" width="600" height="400">
+          </a>
+        </div>
+      </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a onclick="openModal();currentSlide(3)">
+          <img class="thumbnail" src="https://dl.dropbox.com/s/edfzybw2s9r2jsb/zwem.png?dl=1" alt="Northern Lights" width="600" height="400">
+          </a>
+        </div>
+      </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a onclick="openModal();currentSlide(4)">
+          <img class="thumbnail" src="https://dl.dropbox.com/s/qfixesj4s3h1st3/kooka_C.png?dl=1" width="600" height="400">
+          </a>
+        </div>
+      </div>
+
+    <div class="clearfix">
+      </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img class="modalslide1" src="https://dl.dropbox.com/s/efol6za9hpdo4wf/kop.png?dl=1">
+          <div class="caption-container"><p id="caption">J.Zunz</p></div>
+          </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img class="modalslide1" src="https://dl.dropbox.com/s/3gboqkz9kbncad8/ring.png?dl=1">
+          <div class="caption-container"><p id="caption">J.Zunz</p></div>
+          </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img class="modalslide1" src="https://dl.dropbox.com/s/edfzybw2s9r2jsb/zwem.png?dl=1">
+          <div class="caption-container"><p id="caption">J.Zunz</p></div>
+          </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img class="modalslide2" src="https://dl.dropbox.com/s/mrqd9y978kabg0t/kooka.png?dl=1">
+          <div class="caption-container"><p id="caption">tour poster</p></div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div modal-content>
+      </div modal>
+
+    </div insta-posters>
+
+  </div main>
+
+<div style="width:100%;float:right;text-align:center;padding:10px;margin-top:7px;">
+  <a href="https://deathstarmacgyver.com" style="text-decoration:none;color:black;" onMouseOver="this.style='text-decoration:underline;color:red;'" onMouseOut="this.style='text-decoration:none;color:black;'">© Deathstar MacGyver</a>
   </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a onclick="openModal();currentSlide(2)">
-      <img class="thumbnail" src="https://dl.dropbox.com/s/3gboqkz9kbncad8/ring.png?dl=1" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a onclick="openModal();currentSlide(3)">
-      <img class="thumbnail" src="https://dl.dropbox.com/s/edfzybw2s9r2jsb/zwem.png?dl=1" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a onclick="openModal();currentSlide(4)">
-      <img class="thumbnail" src="https://dl.dropbox.com/s/qfixesj4s3h1st3/kooka_C.png?dl=1" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="clearfix"></div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img class="modalslide1" src="https://dl.dropbox.com/s/efol6za9hpdo4wf/kop.png?dl=1">
-          <div class="caption-container">
-      <p id="caption">J.Zunz</p>
-    </div>
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img class="modalslide1" src="https://dl.dropbox.com/s/3gboqkz9kbncad8/ring.png?dl=1">
-          <div class="caption-container">
-      <p id="caption">J.Zunz</p>
-    </div>
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img class="modalslide1" src="https://dl.dropbox.com/s/edfzybw2s9r2jsb/zwem.png?dl=1">
-<div class="caption-container">
-      <p id="caption">J.Zunz</p>
-    </div>
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img class="modalslide2" src="https://dl.dropbox.com/s/mrqd9y978kabg0t/kooka.png?dl=1">
-<div class="caption-container">
-      <p id="caption">tour poster</p>
-    </div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-  </div>
-</div>
-
-</div>
-
-
+ 
   
-</div>
-
-<div style="width:100%;float:right;text-align:center;padding:10px;margin-top:7px;"><a href="https://deathstarmacgyver.com" style="text-decoration:none;color:black;" onMouseOver="this.style='text-decoration:underline;color:red;'" onMouseOut="this.style='text-decoration:none;color:black;'">© Deathstar MacGyver</a></div>
-
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
