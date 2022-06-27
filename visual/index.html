@@ -65,7 +65,7 @@ body{
 }
 
 .post{
-  padding:0px 0px 20px 0px ;
+  padding:0px 0px 10px 0px ;
 }
 
 h1{
@@ -119,6 +119,12 @@ div.desc {
   width: 24.99999%;
 }
 
+.responsive2 {
+  padding: 0px 6px 12px 6px;
+  float: left;
+  width: 49.99999%;
+}
+
 .modalslide1 {
   width:50%;
   margin:0% 24% 0% 24%;
@@ -132,6 +138,10 @@ div.desc {
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
+    margin: 6px 0;
+  }
+  .responsive2 {
+    width: 100%;
     margin: 6px 0;
   }
   .modalslide1 {
@@ -395,27 +405,51 @@ img.hover-shadow {
       <div class="modal-content">
 
         <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
+          <div class="numbertext"># 1</div>
           <img class="modalslide1" src="https://dl.dropbox.com/s/efol6za9hpdo4wf/kop.png?dl=1">
           <div class="caption-container"><p id="caption">J.Zunz</p></div>
           </div>
 
         <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
+          <div class="numbertext"># 2</div>
           <img class="modalslide1" src="https://dl.dropbox.com/s/3gboqkz9kbncad8/ring.png?dl=1">
           <div class="caption-container"><p id="caption">J.Zunz</p></div>
           </div>
 
         <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
+          <div class="numbertext"># 3</div>
           <img class="modalslide1" src="https://dl.dropbox.com/s/edfzybw2s9r2jsb/zwem.png?dl=1">
           <div class="caption-container"><p id="caption">J.Zunz</p></div>
           </div>
 
         <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
+          <div class="numbertext"># 4</div>
           <img class="modalslide1" src="https://dl.dropbox.com/s/p3x5wp6axxcpfyn/kooka.png?dl=1">
           <div class="caption-container"><p id="caption">tour poster</p></div>
+          </div>
+
+        <div class="mySlides">
+          <div class="numbertext"># 5</div>
+          <img class="modalslide1" src="https://dl.dropbox.com/s/nvpibigha5cx6ho/baardmans.gif?dl=1">
+          <div class="caption-container"><p id="caption">/</p></div>
+          </div>
+
+        <div class="mySlides">
+          <div class="numbertext"># 6</div>
+          <img class="modalslide1" src="">
+          <div class="caption-container"><p id="caption">/</p></div>
+          </div>
+
+        <div class="mySlides">
+          <div class="numbertext"># 7</div>
+          <img class="modalslide1" src="">
+          <div class="caption-container"><p id="caption">/</p></div>
+          </div>
+
+        <div class="mySlides">
+          <div class="numbertext"># 8</div>
+          <img class="modalslide1" src="">
+          <div class="caption-container"><p id="caption">/</p></div>
           </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -428,10 +462,53 @@ img.hover-shadow {
 
   <div id="animation" class="post">
     <h1>ANIMATION</h1>
+
+    <div class="responsive2">
+      <div class="gallery">
+        <a onclick="openModal();currentSlide(5)">
+          <img class="thumbnail" src="https://dl.dropbox.com/s/nvpibigha5cx6ho/baardmans.gif?dl=1" width="600" height="400">
+          </a>
+        </div>
+      </div>
+
+
+    <div class="responsive2">
+      <div class="gallery">
+        <a onclick="openModal();currentSlide(6)">
+          <img class="thumbnail" src="https://dl.dropbox.com/s/nvpibigha5cx6ho/baardmans.gif?dl=1" width="600" height="400">
+          </a>
+        </div>
+      </div>
+
+    <div class="responsive2">
+      <div class="gallery">
+        <a onclick="openModal();currentSlide(7)">
+          <img class="thumbnail" src="https://dl.dropbox.com/s/nvpibigha5cx6ho/baardmans.gif?dl=1" alt="Northern Lights" width="600" height="400">
+          </a>
+        </div>
+      </div>
+
+    <div class="responsive2">
+      <div class="gallery">
+        <a onclick="openModal();currentSlide(8)">
+          <img class="thumbnail" src="https://dl.dropbox.com/s/nvpibigha5cx6ho/baardmans.gif?dl=1" width="600" height="400">
+          </a>
+        </div>
+      </div>
+    <div class="clearfix">
+      </div>
+    </div animation>
+
+  <div id="animation" class="post">
+    <h1>ANIMATION</h1>
       <iframe class="viddy" src="https://www.youtube.com/embed/flYmOpwi-C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe class="viddy" src="https://www.youtube.com/embed/wwdBQ6FlHiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div animation>
+
+
   </div main>
+
+
 
 <div style="width:100%;float:right;text-align:center;padding:10px;margin-top:7px;">
   <a href="https://deathstarmacgyver.com" style="text-decoration:none;color:black;" onMouseOver="this.style='text-decoration:underline;color:red;'" onMouseOut="this.style='text-decoration:none;color:black;'">© Deathstar MacGyver</a>
