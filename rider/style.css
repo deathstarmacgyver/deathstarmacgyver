@@ -16,6 +16,7 @@ body {
 a {
     font-family: courier new;
     color: white;
+    text-underline-offset: .5rem;
 }
 
 a:hover {
