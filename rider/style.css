@@ -1,0 +1,23 @@
+article {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    font-size: 2rem;
+}
+
+a {
+    font-family: courier new;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
